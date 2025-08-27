@@ -24,7 +24,7 @@ from mae.pos_embed import interpolate_pos_embed
 
 from myutils import UnNormalize
 
-torch.hub.set_dir('/shared/zhixiang/pretrained_models/CLIP_PreTrain/openai_clip/hub')
+
 
 @MODELS.register_module()
 class FSAProxySegmentation(BaseSegmentor):
@@ -38,7 +38,7 @@ class FSAProxySegmentation(BaseSegmentor):
         )
         super().__init__(data_preprocessor=data_preprocessor)
 
-        self.clip = create_model(model_type, pretrained=clip_type, precision='fp16', cache_dir='/shared/zhixiang/pretrained_models/CLIP_PreTrain/openai_clip')
+        self.clip = create_model(model_type, pretrained=clip_type, precision='fp16')
         self.clip.eval().to(device)
         self.tokenizer = tokenizer.tokenize
 
@@ -47,7 +47,7 @@ class FSAProxySegmentation(BaseSegmentor):
             self.vfm = sam_model_registry["vit_b"](checkpoint=checkpoint)
 
         elif vfm_model == 'dino':
-            self.vfm = torch.hub.load('facebookresearch/dino:main', 'dino_vitb8', hub_dir='/shared/zhixiang/pretrained_models/CLIP_PreTrain/openai_clip')
+            self.vfm = torch.hub.load('facebookresearch/dino:main', 'dino_vitb8')
           
         elif vfm_model == 'dinov2':
             import ssl
@@ -338,4 +338,5 @@ def get_cls_idx(path):
         class_names += names_i
         class_indices += [idx for _ in range(len(names_i))]
     class_names = [item.replace('\n', '') for item in class_names]
+
     return class_names, class_indices
