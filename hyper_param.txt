@@ -1,0 +1,9 @@
+For sam, dino, dinov2 as VFMs:
+
+ViT-B16 and ViT-L14: lamda = 3.0
+ViT-H14: lamda = 2.3
+
+For =MAE as VFMs:
+
+lamda = 4.5 for all models
+
