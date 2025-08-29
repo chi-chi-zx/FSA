@@ -7,8 +7,14 @@ Training-free Open-Vocabulary Segmentation</h1>
     <strong>Accepted to ICCV 2025</strong>
 </div>
 
-<br>
 
+<div>
+    <h4 align="center">
+        • <a href="https://arxiv.org/abs/2508.20265" target='_blank'>[arXiv]</a> •
+    </h4>
+</div>
+
+<br>
 <div>
   <img src="assets/framework.png" width="700px"/>
 </div>
