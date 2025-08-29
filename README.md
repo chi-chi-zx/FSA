@@ -15,7 +15,7 @@ Training-free Open-Vocabulary Segmentation</h1>
 
 </div>
 
-## TL;DL
+## TL;DR
 > *Prior works refine intermediate attention but face limitations: (1) improvements may not propagate to final segmentation; (2) attention lacks direct class information. We introduce a feedback-driven self-adaptive mechanism that reintegrates semantic outputs with visual and textual cues into CLIP. Our approach is orthogonal to existing methods and serves as a plug-in.*
 
 ## News
