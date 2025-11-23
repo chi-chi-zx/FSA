@@ -59,6 +59,8 @@ In this repo, we integrate our FSA into ProxyCLIP (using sam, mae, dino, dinov2 
 
 Please modify some settings in `configs/base_config.py` before running the evaluation.
 
+The default VLM used in this code is [dino_vitb8](https://github.com/facebookresearch/dino). The same as the default one used in ProxyCLIP.
+
 For SAM and MAE, please download the checkpoints from [SAM](https://github.com/facebookresearch/segment-anything#model-checkpoints) and [MAE](https://github.com/facebookresearch/mae).
 
 
