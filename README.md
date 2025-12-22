@@ -86,10 +86,11 @@ Results will be saved in `results.xlsx`.
 ## Citation
 
 ```
-@inproceedings{chi2025fsa,
-  title={Plug-in Feedback Self-adaptive Attention in CLIP for Training-free Open-Vocabulary Segmentation},
-  author={Zhixiang Chi, Yanan Wu, Li Gu, Huan Liu, Ziqiang Wang, Yang Zhang, Yang Wang, Konstantinos N. Plataniotis },
+@inproceedings{chi2025plug,
+  title={Plug-in feedback self-adaptive attention in clip for training-free open-vocabulary segmentation},
+  author={Chi, Zhixiang and Wu, Yanan and Gu, Li and Liu, Huan and Wang, Ziqiang and Zhang, Yang and Wang, Yang and Plataniotis, Konstantinos},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={22815--22825},
   year={2025}
 }
 ```
